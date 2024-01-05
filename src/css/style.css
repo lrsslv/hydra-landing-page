@@ -1,8 +1,8 @@
 body {
     background-color: #343045;
     color: #FFFFFF;
-    display: grid;
     width: 100%;
+    margin: 5rem 8.4rem;
 }
 
 /*HEADER*/
@@ -12,31 +12,53 @@ header {
     width: 100%;
 }
 
+header .logo {
+    display: flex;
+    & :nth-child(2){
+        margin-left: 1.5rem;
+    }
+}
+
 header .menu {
     display: flex;
     align-items: center;
-    gap: 30rem;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 header .menu ul {
     display: flex;
-    justify-content: space-between;
+    margin-left: 20.5rem;
+    margin-right: 14rem;
     & li {
-        padding: 1rem;
+        padding:  2.1rem;
+    }
+    & :hover {
+        color: #C0B7E8;
+        transition: 0.2s ease-in-out;
     }
 }
 
 header .menu button {
-    padding: 17px 35px;
+    display: inline-block;
+    padding: 1.5rem 3.5rem;
     border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: #1c1733;
+    }
     &.contato {
         background-color: #343045;
         color: #FFFFFF;
         border: solid 1px #FFFFFF; 
+        margin-right: 4rem;
     } 
     &.login{
         border-radius: 40px;
         background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+        border: none;
     }
 }
 
