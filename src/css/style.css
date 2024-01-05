@@ -1,0 +1,42 @@
+body {
+    background-color: #343045;
+    color: #FFFFFF;
+    display: grid;
+    width: 100%;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+}
+
+header .menu ul {
+    display: flex;
+    justify-content: space-between;
+    & li {
+        padding: 1rem;
+    }
+}
+
+header .menu button {
+    padding: 17px 35px;
+    border-radius: 40px;
+    &.contato {
+        background-color: #343045;
+        color: #FFFFFF;
+        border: solid 1px #FFFFFF; 
+    } 
+    &.login{
+        border-radius: 40px;
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    }
+}
+
