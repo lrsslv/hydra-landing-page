@@ -14,7 +14,8 @@ header {
 
 header .logo {
     display: flex;
-    & :nth-child(2){
+
+    & :nth-child(2) {
         margin-left: 1.5rem;
     }
 }
@@ -30,9 +31,11 @@ header .menu ul {
     display: flex;
     margin-left: 20.5rem;
     margin-right: 14rem;
+
     & li {
-        padding:  2.1rem;
+        padding: 2.1rem;
     }
+
     & :hover {
         color: #C0B7E8;
         transition: 0.2s ease-in-out;
@@ -43,22 +46,88 @@ header .menu button {
     display: inline-block;
     padding: 1.5rem 3.5rem;
     border-radius: 40px;
-    cursor: pointer;
     transition: transform 0.3s ease-in-out;
+
     &:hover {
         transform: scale(1.1);
         box-shadow: #1c1733;
     }
+
     &.contato {
         background-color: #343045;
         color: #FFFFFF;
-        border: solid 1px #FFFFFF; 
+        border: solid 1px #FFFFFF;
         margin-right: 4rem;
-    } 
-    &.login{
+    }
+
+    &.login {
         border-radius: 40px;
         background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
         border: none;
     }
 }
 
+
+
+
+
+
+/*FOOTER*/
+footer {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 9rem;
+}
+
+footer nav {
+    display: flex;
+
+    & .vertical-line {
+        height: 196px;
+    }
+
+    & :nth-child(3),
+    :nth-child(5) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 30rem;
+        max-height: 19.6rem;
+        margin: 0 auto 0;
+    }
+
+    & :nth-child(5) :nth-child(4) {
+        padding-bottom: 5rem;
+    }
+
+    & .social {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem;
+
+        & ul {
+            display: flex;
+            margin-top: 4rem;
+
+            & img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+        
+        & button {
+            border-radius: 40px;
+            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+            border: none;
+            display: inline-block;
+            padding: 1.5rem 3.5rem;
+            transition: transform 0.3s ease-in-out;
+        
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: #1c1733;
+            }
+        }
+    }
+}

@@ -3,3 +3,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a, button {
+    cursor: pointer;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 700;
+}
