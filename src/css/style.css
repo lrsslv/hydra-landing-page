@@ -43,31 +43,14 @@ header .menu ul {
 }
 
 header .menu button {
-    display: inline-block;
-    padding: 1.5rem 3.5rem;
-    border-radius: 40px;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: #1c1733;
-    }
-
     &.contato {
+        background: none;
         background-color: #343045;
         color: #FFFFFF;
         border: solid 1px #FFFFFF;
         margin-right: 4rem;
     }
-
-    &.login {
-        border-radius: 40px;
-        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-        border: none;
-    }
 }
-
-
 
 
 
@@ -82,6 +65,13 @@ footer {
 
 footer nav {
     display: flex;
+
+    & .logo {
+        width: 185px;
+        height: 187px;
+        flex-shrink: 0;
+        margin-right: 7.7rem;
+    }
 
     & .vertical-line {
         height: 196px;
@@ -109,25 +99,27 @@ footer nav {
         & ul {
             display: flex;
             margin-top: 4rem;
+            margin-bottom: auto;
 
-            & img{
+            & img {
                 width: 32px;
                 height: 32px;
             }
         }
-        
-        & button {
-            border-radius: 40px;
-            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-            border: none;
-            display: inline-block;
-            padding: 1.5rem 3.5rem;
-            transition: transform 0.3s ease-in-out;
-        
-            &:hover {
-                transform: scale(1.1);
-                box-shadow: #1c1733;
-            }
-        }
+    }
+}
+
+footer .rights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.7rem;
+    font-size: 1.4rem;
+
+    & img {
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #343045 0%, #C0B7E8 50%, #343045 100%);
+        margin-bottom: 4.9rem;
     }
 }

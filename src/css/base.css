@@ -10,4 +10,14 @@ a, button {
 button {
     text-transform: uppercase;
     font-weight: 700;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: none;
+    padding: 1.5rem 3.5rem;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: #1c1733;
+    }
 }
