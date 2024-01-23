@@ -9,7 +9,7 @@ body {
 
 header {
     display: flex;
-    width: 100%;
+    width: 135rem;
 }
 
 header .logo {
@@ -23,6 +23,7 @@ header .logo {
 header .menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 12px;
     font-weight: 700;
 }
@@ -50,7 +51,7 @@ header .menu button {
         background-color: #343045;
         color: #FFFFFF;
         border: solid 1px #FFFFFF;
-        margin-right: 4rem;
+        margin-right: 3.5rem;
     }
 }
 
@@ -59,7 +60,7 @@ header .menu button {
 main #hero {
     display: flex;
     flex-direction: column;
-    width: 127.2rem;
+    width: 135rem;
 }
 
 main #hero .introducao {
@@ -92,7 +93,6 @@ main #hero .introducao {
 
         & p {
             max-width: 49.5rem;
-            text-align: justify;
             font-size: 1.6rem;
             line-height: 2.5rem;
         }
@@ -155,12 +155,32 @@ main #hero .contato {
     }
 }
 
+/*ABOUT*/
+
+main #about {
+
+}
+
+main #about .introducao {
+    display: flex;
+
+    & h2, h3 {
+        font-size: 3.6rem;
+        text-transform: uppercase;
+    }
+
+    & h3 {
+        font-weight: 400;
+    }
+}
+
 /*FOOTER*/
 footer {
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 9rem;
+    width: 130rem;
 }
 
 footer nav {
