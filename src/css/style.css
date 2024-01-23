@@ -29,8 +29,10 @@ header .menu {
 
 header .menu ul {
     display: flex;
+    font-size: 1.2rem;
     margin-left: 20.5rem;
     margin-right: 14rem;
+    text-transform: uppercase;
 
     & li {
         padding: 2.1rem;
@@ -52,8 +54,106 @@ header .menu button {
     }
 }
 
+/*HERO*/
 
+main #hero {
+    display: flex;
+    flex-direction: column;
+    width: 127.2rem;
+}
 
+main #hero .introducao {
+    display: flex;
+    justify-content: space-between;
+    margin: 12.4rem 0 8.8rem 0;
+
+    & .text {
+        max-width: 51rem;
+        align-self: center;
+
+        & h1 {
+            font-size: 4.6rem;
+            margin-bottom: 3.6rem;
+
+            & span:nth-child(1) {
+                background: linear-gradient(92deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            & span:nth-child(2) {
+                background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        & p {
+            max-width: 49.5rem;
+            text-align: justify;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+        }
+
+        & :nth-child(3) {
+            display: flex;
+            align-items: end;
+            margin-top: 4rem;
+
+            & img {
+                margin: 0 0 -25px 40px;
+            }
+        }
+    }
+
+    & .main-image {
+        border-radius: 100px 100px 100px 240px;
+        border: solid 18px rgba(0, 0, 0, 0.13);
+    }
+}
+
+main #hero .contato {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 127.2rem;
+    height: 16.7rem;
+    border-radius: 90px;
+    background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    margin-bottom: 9rem;
+    padding: 4.8rem 8rem 4.8rem 3.9rem ;
+
+    & figure {
+        display: flex;
+        align-items: center;
+
+        & .location-pin {
+            width: 70px;
+        }
+
+        & .phone-icon {
+            width: 59px;
+            margin-right: 2.9rem;
+        }
+
+        & .mail-icon {
+            width: 65px;
+            margin-right: 2.3rem;
+        }
+
+        & h3 {
+            font-size: 2.4rem;
+            margin-bottom: 0.9rem;
+        }
+
+        & p {
+            font-size: 1.4rem;
+        }
+    }
+}
 
 /*FOOTER*/
 footer {

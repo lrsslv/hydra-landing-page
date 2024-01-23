@@ -10,10 +10,11 @@ a, button {
 button {
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 1.2rem;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border: none;
-    padding: 1.5rem 3.5rem;
+    padding: 1.7rem 4rem;
     transition: transform 0.3s ease-in-out;
 
     &:hover {
