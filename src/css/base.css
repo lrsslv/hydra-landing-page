@@ -16,6 +16,7 @@ button {
     border: none;
     padding: 1.7rem 4rem;
     transition: transform 0.3s ease-in-out;
+    max-height: 4.8rem;
 
     &:hover {
         transform: scale(1.05);

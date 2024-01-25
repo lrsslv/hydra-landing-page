@@ -158,21 +158,36 @@ main #hero .contato {
 /*ABOUT*/
 
 main #about {
-
+    & h2, h3 {
+        text-transform: uppercase;
+    }
 }
 
-main #about .introducao {
+main #about .introducao, main #about .porque-usar, main #about .sobre {
     display: flex;
 
     & h2, h3 {
         font-size: 3.6rem;
-        text-transform: uppercase;
     }
 
     & h3 {
         font-weight: 400;
+    } 
+
+    & p {
+        font-size: 1.6rem;
+    }
+
+    & .arrow {
+        margin-left: -30px;
     }
 }
+
+main #about .sobre {
+    display: flex;
+
+}
+
 
 /*FOOTER*/
 footer {
