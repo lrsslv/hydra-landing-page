@@ -158,6 +158,8 @@ main #hero .contato {
 /*ABOUT*/
 
 main #about {
+    width: 127.2rem;
+
     & h2, h3 {
         text-transform: uppercase;
     }
@@ -165,6 +167,8 @@ main #about {
 
 main #about .introducao, main #about .porque-usar, main #about .sobre {
     display: flex;
+    margin-bottom: 10rem;
+
 
     & h2, h3 {
         font-size: 3.6rem;
@@ -176,6 +180,7 @@ main #about .introducao, main #about .porque-usar, main #about .sobre {
 
     & p {
         font-size: 1.6rem;
+        line-height: 2.5rem;
     }
 
     & .arrow {
@@ -185,7 +190,23 @@ main #about .introducao, main #about .porque-usar, main #about .sobre {
 
 main #about .sobre {
     display: flex;
+    align-items: center;
 
+    & img{
+        border-radius: 230px 100px;
+    }
+
+    & div {
+        margin-left: 10.6rem;
+
+        & h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        & p{
+            margin: 4.2rem 0 2.8rem 0;
+        }
+    }
 }
 
 
