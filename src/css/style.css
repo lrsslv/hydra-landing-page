@@ -2,6 +2,7 @@ body {
     background-color: #343045;
     color: #FFFFFF;
     width: 100%;
+    font-size: 100%;
     margin: 5rem 8.4rem;
 }
 
@@ -9,7 +10,7 @@ body {
 
 header {
     display: flex;
-    width: 135rem;
+    width: 1278px;
 }
 
 header .logo {
@@ -31,8 +32,8 @@ header .menu {
 header .menu ul {
     display: flex;
     font-size: 1.2rem;
-    margin-left: 20.5rem;
-    margin-right: 14rem;
+    margin-left: 15rem;
+    margin-right: 10rem;
     text-transform: uppercase;
 
     & li {
@@ -60,7 +61,7 @@ header .menu button {
 main #hero {
     display: flex;
     flex-direction: column;
-    width: 135rem;
+    width: 1278px;
 }
 
 main #hero .introducao {
@@ -124,7 +125,7 @@ main #hero .contato {
     background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
     box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
     margin-bottom: 9rem;
-    padding: 4.8rem 8rem 4.8rem 3.9rem ;
+    padding: 4.8rem 8rem 4.8rem 3.9rem;
 
     & figure {
         display: flex;
@@ -158,25 +159,28 @@ main #hero .contato {
 /*ABOUT*/
 
 main #about {
-    width: 127.2rem;
+    width: 1278px;
 
-    & h2, h3 {
+    & h2,
+    h3 {
         text-transform: uppercase;
     }
 }
 
-main #about .introducao, main #about .porque-usar, main #about .sobre {
+main #about .introducao,
+main #about .sobre,
+main #about .porque-usar {
     display: flex;
     margin-bottom: 10rem;
 
-
-    & h2, h3 {
+    & h2,
+    h3 {
         font-size: 3.6rem;
     }
 
     & h3 {
         font-weight: 400;
-    } 
+    }
 
     & p {
         font-size: 1.6rem;
@@ -188,11 +192,33 @@ main #about .introducao, main #about .porque-usar, main #about .sobre {
     }
 }
 
+main #about .introducao,
+main #about .porque-usar {
+    & h2 {
+        margin-bottom: 8px;
+    }
+
+    & .flecha {
+        display: flex;
+        margin-top: 23px;
+    }
+
+    & p {
+        margin-left: 10rem;
+    }
+}
+
+main #about .introducao {
+    & .flecha {
+        margin-left: -20px;
+    }
+}
+
 main #about .sobre {
     display: flex;
     align-items: center;
 
-    & img{
+    & img {
         border-radius: 230px 100px;
     }
 
@@ -203,12 +229,97 @@ main #about .sobre {
             margin-bottom: 0.5rem;
         }
 
-        & p{
+        & p {
             margin: 4.2rem 0 2.8rem 0;
         }
     }
 }
 
+main #about .porque-usar {
+
+    & h2,
+    h3 {
+        width: 270px;
+    }
+
+    & .flecha {
+        margin-left: 20px;
+    }
+}
+
+
+/*CARDS*/
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1278px;
+}
+
+.cards div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 310px;
+    height: 511px;
+    padding: 25px;
+    border-radius: 40px;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    ;
+
+    & .imagem-principal {
+        width: 200px;
+        border-radius: 50%;
+        border: solid 13px #0E0E0E52;
+        ;
+    }
+
+    & h2 {
+        font-size: 24px;
+    }
+
+    & .line {
+        width: 155px;
+        height: 5px;
+    }
+
+    & p {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    & button {
+        margin-top: 20px;
+    }
+}
+
+
+/*TECNOLOGIES*/
+
+#tecnologies {
+    width: 1278px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tecnologies .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+    border-radius: 50%;
+    background-image: url('./images/tecnologies-image.png');
+
+    & h1 {
+        font-size: 36px;
+    }
+
+    & h2 {
+        font-size: 36px;
+        font-weight: 300;
+    }
+}
 
 /*FOOTER*/
 footer {
