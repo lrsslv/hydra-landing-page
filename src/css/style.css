@@ -161,8 +161,7 @@ main #hero .contato {
 main #about {
     width: 1278px;
 
-    & h2,
-    h3 {
+    & h2, h3 {
         text-transform: uppercase;
     }
 }
@@ -173,8 +172,7 @@ main #about .porque-usar {
     display: flex;
     margin-bottom: 10rem;
 
-    & h2,
-    h3 {
+    & h2, h3 {
         font-size: 3.6rem;
     }
 
@@ -237,8 +235,7 @@ main #about .sobre {
 
 main #about .porque-usar {
 
-    & h2,
-    h3 {
+    & h2, h3 {
         width: 270px;
     }
 
@@ -319,6 +316,102 @@ main #about .porque-usar {
         font-size: 36px;
         font-weight: 300;
     }
+}
+
+#tecnologies .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & :nth-child(1) {
+        height: 174px;
+    }
+}
+
+#tecnologies .como-usar .informacoes {
+    display: flex;
+    margin: 10rem 0;
+
+    & .titulo {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        width: 85rem;
+
+        & h2 {
+            margin-bottom: 8px;
+            font-size: 3.6rem;
+        }
+
+        & h3 {
+            font-weight: 400;
+            font-size: 3.6rem;
+        }
+    } 
+
+    & .flecha {
+        display: flex;
+        margin: 30px 40px 0 0;
+
+        & .arrow {
+            margin-left: -30px;
+        }
+    }
+   
+    & p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        width: 170rem;
+    }
+}
+
+#tecnologies .como-usar .ferramentas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+    background: url('../images/background-lines/background-line-ferramentas.svg') no-repeat;
+    
+    & div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 255px;
+
+        & .circulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: solid 20px rgba(13, 13, 13, 0.32);
+
+            & h2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 160px;
+                height: 160px;
+                font-size: 6.4rem;
+                color: #343045;
+                background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+                border-radius: 50%;
+            }
+        }
+    
+        & p {
+            display: flex;
+            font-size: 2.4rem;
+            font-weight: 700; 
+            margin-top: 30px;
+    
+            & img {
+                width: 67px;
+                margin-top: -20px;
+            }
+        }
+    } 
 }
 
 /*FOOTER*/
