@@ -471,7 +471,7 @@ main #about .porque-usar {
             display: flex;
             background-color: transparent;
             border-radius: 40px;
-            border: 2px solid rgba(255, 255, 255, 1);
+            border: 2px solid #ffffff;
             margin-bottom: 40px;
             padding-left: 40px;
 
