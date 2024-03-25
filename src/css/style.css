@@ -414,6 +414,91 @@ main #about .porque-usar {
     } 
 }
 
+
+/*FORMULÁRIO*/
+#formulario {
+    width: 1275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 80px;
+    padding: 105px;
+
+    & .titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+
+        & h1 {
+            text-transform: uppercase;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    
+        & img {
+            width: 414px;
+            height: 1px;
+            background: linear-gradient(270deg, #343045 0%, #C0B7E8 50%, #343045 100%);
+            margin-bottom: 20px;
+
+        }
+    
+        & h2 {
+            font-weight: 400;
+            font-size: 36px;
+        }
+    }
+
+    & form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & :nth-child(1) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            & input {
+                min-width: 525px;
+            }
+        }
+
+        & input, textarea {
+            display: flex;
+            background-color: transparent;
+            border-radius: 40px;
+            border: 2px solid rgba(255, 255, 255, 1);
+            margin-bottom: 40px;
+            padding-left: 40px;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+            }
+        }
+
+        & input {
+            height: 72px;
+        } 
+
+        & .textarea, .subject {
+            width: 1065px;
+        }
+
+        & .textarea {
+            padding-top: 25px;
+        }
+
+        & .button {
+            border: none;
+        }
+    }
+}
+
 /*FOOTER*/
 footer {
     font-size: 1.6rem;
