@@ -1,16 +1,16 @@
 body {
-    background-color: #343045;
-    color: #FFFFFF;
     width: 100%;
+    background-color: #302c42;
+    color: #FFFFFF;
     font-size: 100%;
-    margin: 5rem 8.4rem;
+    margin: 5rem 3.5rem;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
 
 header {
     display: flex;
-    width: 1278px;
 }
 
 header .logo {
@@ -250,6 +250,7 @@ main #about .porque-usar {
     display: flex;
     justify-content: space-between;
     width: 1278px;
+    margin-bottom: 90px;
 }
 
 .cards div {
@@ -301,15 +302,17 @@ main #about .porque-usar {
 
 #tecnologies .title {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 305px;
     border-radius: 50%;
-    background-image: url('./images/tecnologies-image.png');
+    background: url('../images/tecnologies-image.png') no-repeat;
+    background-size: cover;
 
     & h1 {
         font-size: 36px;
+        margin-bottom: 10px;
     }
 
     & h2 {
@@ -529,7 +532,13 @@ footer nav {
         justify-content: space-between;
         max-width: 30rem;
         max-height: 19.6rem;
-        margin: 0 auto 0;
+        margin: 0 auto;
+    }
+
+    & :nth-child(3) {
+        & li:nth-last-child(1) {
+            margin-left: 0;
+        }
     }
 
     & :nth-child(5) :nth-child(4) {
@@ -543,13 +552,22 @@ footer nav {
 
         & ul {
             display: flex;
-            margin-top: 4rem;
-            margin-bottom: auto;
+            margin: 4rem 0 auto;
+
+            & li {
+                margin-right: 2.5rem;
+            }
 
             & img {
                 width: 32px;
                 height: 32px;
             }
+        }
+
+        & button {
+            display: flex;
+            align-items: center;
+            margin-left: 0;
         }
     }
 }
