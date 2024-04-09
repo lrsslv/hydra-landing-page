@@ -5,6 +5,15 @@ body {
     font-size: 100%;
     margin: 5rem 3.5rem;
     overflow-x: hidden;
+    background-image:  
+        url('../../images/background-lines/about-1.png'), 
+        url('../../images/background-lines/about-2.png'), 
+        url('../../images/background-lines/cards-1.png'),
+        url('../../images/background-lines/tools-1.png'), 
+        url('../../images/background-lines/footer-1.png'), 
+        url('../../images/background-lines/footer-2.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: center 24%, center 29.3%, center 46%, center 67%, center 93.5%, center 97.1%;  
 }
 
 /*HEADER*/
@@ -161,7 +170,8 @@ main #hero .contato {
 main #about {
     width: 1278px;
 
-    & h2, h3 {
+    & h2,
+    h3 {
         text-transform: uppercase;
     }
 }
@@ -172,7 +182,8 @@ main #about .porque-usar {
     display: flex;
     margin-bottom: 10rem;
 
-    & h2, h3 {
+    & h2,
+    h3 {
         font-size: 3.6rem;
     }
 
@@ -235,7 +246,8 @@ main #about .sobre {
 
 main #about .porque-usar {
 
-    & h2, h3 {
+    & h2,
+    h3 {
         width: 270px;
     }
 
@@ -250,7 +262,7 @@ main #about .porque-usar {
     display: flex;
     justify-content: space-between;
     width: 1278px;
-    margin-bottom: 90px;
+    margin-bottom: 10rem;
 }
 
 .cards div {
@@ -306,18 +318,29 @@ main #about .porque-usar {
     justify-content: center;
     align-items: center;
     height: 305px;
-    border-radius: 50%;
-    background: url('../images/tecnologies-image.png') no-repeat;
+    border-radius: 150px;
+    background: url('../../images/tecnologies-image.png') no-repeat;
     background-size: cover;
+    margin-bottom: 70px;
 
     & h1 {
         font-size: 36px;
+        margin-top: 140px;
         margin-bottom: 10px;
     }
 
     & h2 {
         font-size: 36px;
         font-weight: 300;
+    }
+
+    & img {
+        display: inline-block;
+        margin-top: 60px;
+        padding: 20px 15px;
+        background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+        border-radius: 50%;
+        border: solid 10px rgba(15, 15, 15, 0.9);
     }
 }
 
@@ -333,7 +356,7 @@ main #about .porque-usar {
 
 #tecnologies .como-usar .informacoes {
     display: flex;
-    margin: 10rem 0;
+    margin: 7rem 0;
 
     & .titulo {
         display: flex;
@@ -350,7 +373,7 @@ main #about .porque-usar {
             font-weight: 400;
             font-size: 3.6rem;
         }
-    } 
+    }
 
     & .flecha {
         display: flex;
@@ -360,7 +383,7 @@ main #about .porque-usar {
             margin-left: -30px;
         }
     }
-   
+
     & p {
         font-size: 1.6rem;
         line-height: 2.5rem;
@@ -373,9 +396,8 @@ main #about .porque-usar {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 10rem;
-    background: url('../images/background-lines/background-line-ferramentas.svg') no-repeat;
-    
-    & div{
+ 
+    & div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -402,19 +424,19 @@ main #about .porque-usar {
                 border-radius: 50%;
             }
         }
-    
+
         & p {
             display: flex;
             font-size: 2.4rem;
-            font-weight: 700; 
+            font-weight: 700;
             margin-top: 30px;
-    
+
             & img {
                 width: 67px;
                 margin-top: -20px;
             }
         }
-    } 
+    }
 }
 
 
@@ -440,7 +462,7 @@ main #about .porque-usar {
             font-size: 36px;
             margin-bottom: 20px;
         }
-    
+
         & img {
             width: 414px;
             height: 1px;
@@ -448,7 +470,7 @@ main #about .porque-usar {
             margin-bottom: 20px;
 
         }
-    
+
         & h2 {
             font-weight: 400;
             font-size: 36px;
@@ -470,7 +492,8 @@ main #about .porque-usar {
             }
         }
 
-        & input, textarea {
+        & input,
+        textarea {
             display: flex;
             background-color: transparent;
             border-radius: 40px;
@@ -486,9 +509,10 @@ main #about .porque-usar {
 
         & input {
             height: 72px;
-        } 
+        }
 
-        & .textarea, .subject {
+        & .textarea,
+        .subject {
             width: 1065px;
         }
 
@@ -502,12 +526,12 @@ main #about .porque-usar {
     }
 }
 
-/*FOOTER*/
+/*FOOTER*/ 
 footer {
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 9rem;
+    margin-top: 17rem;
     width: 130rem;
 }
 
@@ -556,6 +580,11 @@ footer nav {
 
             & li {
                 margin-right: 2.5rem;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.10);
+                }
             }
 
             & img {
